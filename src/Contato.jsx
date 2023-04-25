@@ -5,7 +5,7 @@ export default function Contato() {
         <div className="contato" id="contato">
             <div className="contato-texto">
                 <h1>Contato</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit a illo pariatur quis quasi aut doloremque! Dignissimos, ex! Beatae distinctio aliquam rem, quam quibusdam voluptatibus porro voluptates excepturi eaque laborum.</p>
+                <p>Se interessou? Vamos criar algo juntos!</p>
             </div>
             
             {/*<div className="contato-form">
