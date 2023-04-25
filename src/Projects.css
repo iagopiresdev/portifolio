@@ -1,0 +1,111 @@
+.projects {
+    margin-top: 40px;
+}
+
+.projects-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projects-header h1 {
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+    color: #fff;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.projects-container img {
+    height: 400px;
+}
+
+.projects-container h2 {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    color: #fff;
+    margin-top:15px;
+    margin-bottom:-10px;
+}
+
+.projects-container p {
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+.projects-container p span {
+    margin-right: 10px ;
+}
+
+.image-container {
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+}
+
+.image-container img:hover {
+    cursor: pointer;
+    filter: brightness(50%);
+}
+
+.button-container {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    visibility: hidden;
+    z-index: 3;
+}
+
+.image-container:hover .button-container {
+    visibility: visible;
+}
+
+.button-container a {
+    color: #fff;
+}
+
+.button-container:hover button {
+    color: #fff;
+}
+
+.button-container:hover {
+    cursor: pointer;
+}
+
+.image-container:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+  
+
+.button-container a {
+    margin-bottom: 50px;
+}
+
+.button-container .real-button-btn-1:hover {
+    color: var(--main-color);
+}
+
+.button-container .real-button-btn-2:hover {
+    color: var(--main-color);
+}
