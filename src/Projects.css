@@ -24,6 +24,9 @@
 
 .projects-container img {
     height: 400px;
+    width: 100%;
+    object-fit: fill;
+
 }
 
 .projects-container h2 {
