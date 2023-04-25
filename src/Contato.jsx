@@ -5,7 +5,7 @@ export default function Contato() {
         <div className="contato" id="contato">
             <div className="contato-texto">
                 <h1>Contato</h1>
-                <p>Se interessou? Vamos criar algo juntos!</p>
+                <p>Se interessou? Vamos criar algo juntos! </p>
             </div>
             
             {/*<div className="contato-form">
