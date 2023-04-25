@@ -6,9 +6,9 @@ export default function Sobre() {
     <div className='sobre'>
         <div className='apresentacao'>
         <h1>
-            Opa! Prazer em <wbr/>conhecê-lo<br/>Meu nome é <span className="nome">Iago Pires</span>.</h1>
+            Opa! É um imenso prazer. <wbr/><br/>Meu nome é <span className="nome">Iago Pires</span>.</h1>
         <p>
-            Direto do Amazonas, Brazil! <br/> Sou um desenvolvedor fullstack aficcionado por novas tecnologias!
+            Sou um desenvolvedor júnior FullStack. <br/>Diretamente do Amazonas, Brasil.
         </p>
         <a href="#contato">
             <button className="contato">CONTATE-ME</button>

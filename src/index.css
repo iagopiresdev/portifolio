@@ -33,6 +33,10 @@ p {
   align-items: flex-start;
 }
 
+a {
+  text-decoration: none;
+}
+
 button {
   font-weight: 700;
   padding: 10px 0;
