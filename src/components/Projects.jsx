@@ -1,11 +1,6 @@
-import './Projects.css'
-import projeto1 from "./assets/tiktok-clone.png"
-import projeto2 from "./assets/spaceinvaders-game.png"
-import projeto3 from "./assets/mvc-application.png"
-import projeto4 from "./assets/puppeteer.png"
-import projeto5 from "./assets/todo-list.png"
-import projeto6 from "./assets/harus-candy.png"
-import React, { useEffect, useState } from 'react'
+import '../styles/Projects.css'
+import { projeto1, projeto2, projeto3, projeto4, projeto5, projeto6 , projeto7} from "../assets/index.js"
+import React, { useState } from 'react'
 
 export default function Projects() {
   const [mostrarBotoes, setMostrarBotoes] = useState(false);
@@ -17,11 +12,31 @@ export default function Projects() {
                     <button>CONTATE-ME</button>
                 </a>
             </div>
-            
+
             <div className="projects-container">
                 <div className="project" onMouseLeave={() => setMostrarBotoes(false)}>
                     <div className='image-container'>
                         <img src={projeto1} alt="imagem de um projeto..." 
+                            onMouseEnter={() => setMostrarBotoes(true)}>
+                        </img>
+                        {mostrarBotoes && (
+                            <div className="button-container" >
+                                <a href='https://intelligallery.vercel.app' target="_blank">
+                                    <button className='real-button-btn-1'>VER PROJETO</button>
+                                </a>
+                                <a href='https://github.com/iagopiresdev/intelligallery' target='_blank'>
+                                    <button className='real-button-btn-2'>VER CÓDIGO</button>
+                                </a>
+                            </div>
+                        )}
+                    </div>
+                    <h2>INTELLIGALLERY</h2>
+                    <p> <span>MONGODB</span> <span>EXPRESS</span> <span>REACT</span> <span>NODE.JS</span> <span>TAILWIND</span> <span>TYPESCRIPT</span> <span>OPENAI API</span></p>
+                </div>
+
+                <div className="project" onMouseLeave={() => setMostrarBotoes(false)}>
+                    <div className='image-container'>
+                        <img src={projeto2} alt="imagem de um projeto..." 
                             onMouseEnter={() => setMostrarBotoes(true)}>
                         </img>
                         {mostrarBotoes && (
@@ -41,7 +56,7 @@ export default function Projects() {
 
                 <div className="project" onMouseLeave={() => setMostrarBotoes(false)}>
                     <div className='image-container'>
-                        <img src={projeto2} alt="Space Invaders Game"
+                        <img src={projeto3} alt="Space Invaders Game"
                             onMouseEnter={() => setMostrarBotoes(true)}>
                         </img>
                         {mostrarBotoes && (
@@ -56,12 +71,12 @@ export default function Projects() {
                         )}
                     </div>
                     <h2>SPACE INVADERS GAME</h2>
-                    <p> <span>HTML</span> <span>JAVASCRIPT</span> <span>DOM</span> <span>OOP</span></p>
+                    <p> <span>HTML</span> <span>JAVASCRIPT</span> <span>DOM</span> <span>POO/OOP</span></p>
                 </div>
 
                 <div className="project" onMouseLeave={() => setMostrarBotoes(false)}>
                     <div className='image-container'>
-                        <img src={projeto3} alt="MVC Application"
+                        <img src={projeto4} alt="MVC Application"
                             onMouseEnter={() => setMostrarBotoes(true)}>
                         </img>
                         {mostrarBotoes && (
@@ -76,12 +91,12 @@ export default function Projects() {
                         )}
                     </div>  
                     <h2>MVC APPLICATION</h2>
-                    <p> <span>BACKEND</span> <span>NODE.JS</span> <span>EXPRESS.JS</span> <span>SEQUELIZE</span> <span>SQL</span></p>
+                    <p> <span>NODE.JS</span> <span>EXPRESS</span> <span>SEQUELIZE</span> <span>SQL</span> <span>CRUD</span></p>
                 </div>
 
                 <div className="project" onMouseLeave={() => setMostrarBotoes(false)}>
                     <div className='image-container'>
-                        <img src={projeto4} alt="imagem de um projeto..."
+                        <img src={projeto5} alt="imagem de um projeto..."
                             onMouseEnter={() => setMostrarBotoes(true)}>
                         </img>
                         {mostrarBotoes && (
@@ -100,7 +115,7 @@ export default function Projects() {
                 </div>
                 <div className="project" onMouseLeave={() => setMostrarBotoes(false)}>
                     <div className='image-container'>
-                        <img src={projeto5} alt="imagem de um projeto..."
+                        <img src={projeto6} alt="imagem de um projeto..."
                             onMouseEnter={() => setMostrarBotoes(true)}>
                         </img>
                         {mostrarBotoes && (
@@ -119,7 +134,7 @@ export default function Projects() {
                 </div>
                 <div className="project" onMouseLeave={() => setMostrarBotoes(false)}>
                     <div className='image-container'>
-                        <img src={projeto6} alt="imagem de um projeto..."
+                        <img src={projeto7} alt="imagem de um projeto..."
                             onMouseEnter={() => setMostrarBotoes(true)}>
                         </img>
                         {mostrarBotoes && (

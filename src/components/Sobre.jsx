@@ -1,5 +1,5 @@
-import './Sobre.css';
-import perfil from './assets/perfil.png';
+import '../styles/Sobre.css';
+import { perfil } from '../assets/index';
 
 export default function Sobre() {
   return (

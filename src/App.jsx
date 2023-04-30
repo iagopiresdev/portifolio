@@ -1,9 +1,6 @@
 import './App.css'
-import Contato from './Contato';
-import Habilidades from './Habilidades';
-import Header from './Header'
-import Projects from './Projects';
-import Sobre from './Sobre'
+import { Header, Sobre, Habilidades, Projects, Contato } from './components/index.js'
+
 
 function App() {
   return (
@@ -14,8 +11,8 @@ function App() {
       <Projects />
       <Contato />
       <Header />
-      </>
-    );
+    </>
+  );
 }
 
 export default App

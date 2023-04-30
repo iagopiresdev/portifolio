@@ -1,7 +1,7 @@
-import './Header.css'
-import iconGithub from './assets/icon-github.svg'
-import iconLinkedin from './assets/icon-linkedin.svg'
-import iconMedium from './assets/icon-medium.svg'
+import '../styles/Header.css'
+import iconGithub from '../assets/icon-github.svg'
+import iconLinkedin from '../assets/icon-linkedin.svg'
+import iconMedium from '../assets/icon-medium.svg'
 
 export default function Header() {
     return (
