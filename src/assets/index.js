@@ -8,7 +8,7 @@ export { default as projeto4 } from './mvc-application.png';
 export { default as projeto5 } from './puppeteer.png';
 export { default as projeto6 } from './todo-list.png';
 export { default as projeto7 } from './harus-candy.png';
-//export { default as projeto7 } from './pokedex.png';
+export { default as projeto8 } from './gitfinder.png';
 //export { default as projeto8 } from './pomodoro.png';
 
 

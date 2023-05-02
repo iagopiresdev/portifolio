@@ -1,5 +1,5 @@
 import '../styles/Projects.css'
-import { projeto1, projeto2, projeto3, projeto4, projeto5, projeto6 , projeto7} from "../assets/index.js"
+import { projeto1, projeto2, projeto3, projeto4, projeto5, projeto6 , projeto7, projeto8} from "../assets/index.js"
 import React, { useState } from 'react'
 
 export default function Projects() {
@@ -113,6 +113,27 @@ export default function Projects() {
                     <h2>WEB SCRAPPER</h2>
                     <p> <span>JAVASCRIPT</span> <span>PUPPETEER</span></p>
                 </div>
+
+                <div className="project" onMouseLeave={() => setMostrarBotoes(false)}>
+                    <div className='image-container'>
+                        <img src={projeto8} alt="imagem de um projeto..."
+                            onMouseEnter={() => setMostrarBotoes(true)}>
+                        </img>
+                        {mostrarBotoes && (
+                            <div className="button-container" >
+                                <a href='https://gitfinder-iagopiresdev.vercel.app' target="_blank">
+                                    <button className='real-button-btn-1'>VER PROJETO</button>
+                                </a>
+                                <a href='https://github.com/iagopiresdev/gitfinder' target="_blank">
+                                    <button className='real-button-btn-2'>VER CÓDIGO</button>
+                                </a>
+                            </div>
+                        )}
+                    </div>
+                    <h2>GITFINDER</h2>
+                    <p> <span>JAVASCRIPT</span> <span>REACT</span> <span>API</span></p>
+                </div>
+
                 <div className="project" onMouseLeave={() => setMostrarBotoes(false)}>
                     <div className='image-container'>
                         <img src={projeto6} alt="imagem de um projeto..."
@@ -132,6 +153,7 @@ export default function Projects() {
                     <h2>TODO LIST</h2>
                     <p> <span>HTML</span> <span>CSS</span> <span>JQUERY</span></p>
                 </div>
+
                 <div className="project" onMouseLeave={() => setMostrarBotoes(false)}>
                     <div className='image-container'>
                         <img src={projeto7} alt="imagem de um projeto..."
