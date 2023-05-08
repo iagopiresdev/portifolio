@@ -1,7 +1,7 @@
 .sobre {
-    position: relative;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
     padding-bottom: 80px;
     margin-top: -20px;
     border-bottom: 1px solid #fff;
@@ -10,16 +10,16 @@
 .sobre h1 {
     font-family: "Bold", sans-serif;
     letter-spacing: -1.5px;
-    font-size: 68px;
+    font-size: 40px;
+    z-index: 1;
 }
 
-.apresentacao {
-    position: relative;
-    margin-top: 80px;
+.apresentacao { 
+    margin-top: 0px;
     display: flex;
     flex-direction: column;
-    align-items: baseline;
-    text-align: left;
+    align-items: center;
+    text-align: center;
 }
 
 .nome {
@@ -27,12 +27,44 @@
 }
 
 .perfil {
-    position: absolute;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    border-radius: 60%;
+    z-index: 2;
 
-    width: 400px;
-    left: 50%;
 }
 
+#contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+@media(min-width: 920px){
+    .sobre {
+        position: relative;
+        flex-direction: row;
+    }
 
+    .sobre h1 {
+        font-size: 68px;
+        position: relative;
+    }
+
+    .apresentacao {
+        position: relative;
+        margin-top: 80px;
+        align-items: baseline;
+        text-align: left;
+    }
+
+    .perfil {
+        position: absolute;
+        width: 450px;
+        height: 600px;
+        right: -20px;
+        border-radius: 0;
+    }
+}
   

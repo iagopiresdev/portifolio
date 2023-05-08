@@ -7,16 +7,20 @@ export default function Contato() {
                 <h1>Contato</h1>
                 <p>Se interessou? Vamos criar algo juntos! </p>
             </div>
-            
-            {/*<div className="contato-form">
                 <form>
-                    <input type="text" placeholder="Nome" />
-                    <input type="email" placeholder="Email" />
-                    <textarea placeholder="Mensagem"></textarea>
-                    <button>Enviar</button>
+                    <div className="form-group">
+                        <input type="text" id="nome" name="nome" placeholder="NOME" />
+                    </div>
+                    <div className="form-group">
+                        <input type="email" id="email" name="email" placeholder="E-MAIL" />
+                    </div>
+                    <div className="form-group">
+                        <textarea id="mensagem" name="mensagem" placeholder="MENSAGEM"></textarea>
+                    </div>
+                    <div className="btn-wrapper">
+                        <button type="submit">ENVIAR</button>
+                    </div>
                 </form>
-            </div>
-            */}
         </div>
     )
 }

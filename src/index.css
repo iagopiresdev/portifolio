@@ -19,9 +19,11 @@
 }
 
 body {
-  margin: 0 165px;
-  min-width: 320px;
+  padding: 5px 15px 20px 15px;
+  min-width: 340px;
   min-height: 100svh;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 

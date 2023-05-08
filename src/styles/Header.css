@@ -2,6 +2,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
+}
+
+.header h2 {
+    margin-top: 0;
 }
 
 .logo {
@@ -11,4 +16,19 @@
 
 .icon-invert {
     filter: invert(1);
+}
+
+@media (min-width: 768px) {
+    .header {
+        flex-direction: row;
+    }
+
+    .header h2 {
+        margin-top: 0;
+    }
+
+    .logo {
+        height: 32px;
+        padding: 10px;
+    }
 }

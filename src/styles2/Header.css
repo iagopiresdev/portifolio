@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 24px;
+    padding: 10px;
+}
+
+.icon-invert {
+    filter: invert(1);
+}
