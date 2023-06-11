@@ -14,6 +14,33 @@ export default function Projects() {
             </div>
 
             <div className="projects-container">
+                {/* YOMU MANGA */}
+                <div className="project" onMouseLeave={() => setMostrarBotoes(false)}>
+                    <div className='image-container'>
+                        <img src={projeto6} alt="imagem de um projeto..."
+                            onMouseEnter={() => setMostrarBotoes(true)}>
+                        </img>
+                        {mostrarBotoes && (
+                            <div className="button-container" >
+                                <a href='https://yomu-manga.vercel.app' target="_blank">
+                                    <button className='real-button-btn-1'>VER PROJETO</button>
+                                </a>
+                                <a href='https://github.com/iagopiresdev/fullstack-challenge' target="_blank">
+                                    <button className='real-button-btn-2'>VER CÓDIGO</button>
+                                </a>
+                            </div>
+                        )}
+                    </div>
+                    <h2>YOMU MANGA</h2>
+                    <p> 
+                        <span>REACT</span> <span>TYPESCRIPT</span> <span>TAILWIND</span>
+                        <span>NODEJS</span> <span>EXPRESS</span> <span>PRISMA</span> 
+                        <span>POSTGRESQL</span> <span>RESTAPI</span> <span>JWT</span> 
+                        <span>CRUD</span> <span>DOCKER</span>
+                    </p>
+                </div>
+                
+                {/* INTELLIGALLERY */}
                 <div className="project" onMouseLeave={() => setMostrarBotoes(false)}>
                     <div className='image-container'>
                         <img src={projeto1} alt="imagem de um projeto..." 
@@ -34,6 +61,7 @@ export default function Projects() {
                     <p> <span>MONGODB</span> <span>EXPRESS</span> <span>REACT</span> <span>NODE.JS</span> <span>TAILWIND</span> <span>TYPESCRIPT</span> <span>OPENAI API</span></p>
                 </div>
 
+                {/* TIKTOK CLONE */}
                 <div className="project" onMouseLeave={() => setMostrarBotoes(false)}>
                     <div className='image-container'>
                         <img src={projeto2} alt="imagem de um projeto..." 
@@ -41,19 +69,23 @@ export default function Projects() {
                         </img>
                         {mostrarBotoes && (
                             <div className="button-container" >
-                                <a href='https://tik-tok-clone-seven-fawn.vercel.app/' target="_blank">
+                                <a href='https://promptshare-silk.vercel.app/' target="_blank">
                                     <button className='real-button-btn-1'>VER PROJETO</button>
                                 </a>
-                                <a href='https://github.com/iagopiresdev/TikTok-clone' target='_blank'>
+                                <a href='https://github.com/iagopiresdev/promptshare' target='_blank'>
                                     <button className='real-button-btn-2'>VER CÓDIGO</button>
                                 </a>
                             </div>
                         )}
                     </div>
-                    <h2>CLONE DO TIKTOK</h2>
-                    <p> <span>REACT</span> <span>TYPESCRIPT</span> <span>FIREBASE</span></p>
+                    <h2>PROMPTSHARE</h2>
+                    <p> 
+                        <span>REACT</span> <span>TYPESCRIPT</span> <span>NEXTJS 13.3</span> 
+                        <span>APP ROUTER</span> <span>NEXT OAUTH</span> <span>SSR</span>
+                    </p>
                 </div>
 
+                {/* SPACE INVADERS GAME */}
                 <div className="project" onMouseLeave={() => setMostrarBotoes(false)}>
                     <div className='image-container'>
                         <img src={projeto3} alt="Space Invaders Game"
@@ -74,6 +106,7 @@ export default function Projects() {
                     <p> <span>HTML</span> <span>JAVASCRIPT</span> <span>DOM</span> <span>POO/OOP</span></p>
                 </div>
 
+                {/* MVC APPLICATION */}
                 <div className="project" onMouseLeave={() => setMostrarBotoes(false)}>
                     <div className='image-container'>
                         <img src={projeto4} alt="MVC Application"
@@ -94,6 +127,7 @@ export default function Projects() {
                     <p> <span>NODE.JS</span> <span>EXPRESS</span> <span>SEQUELIZE</span> <span>SQL</span> <span>CRUD</span></p>
                 </div>
 
+                {/* WEB SCRAPPER */}
                 <div className="project" onMouseLeave={() => setMostrarBotoes(false)}>
                     <div className='image-container'>
                         <img src={projeto5} alt="imagem de um projeto..."
@@ -114,6 +148,7 @@ export default function Projects() {
                     <p> <span>JAVASCRIPT</span> <span>PUPPETEER</span></p>
                 </div>
 
+                {/* GITFINDER */}
                 <div className="project" onMouseLeave={() => setMostrarBotoes(false)}>
                     <div className='image-container'>
                         <img src={projeto8} alt="imagem de um projeto..."
@@ -134,26 +169,7 @@ export default function Projects() {
                     <p> <span>JAVASCRIPT</span> <span>REACT</span> <span>API</span></p>
                 </div>
 
-                <div className="project" onMouseLeave={() => setMostrarBotoes(false)}>
-                    <div className='image-container'>
-                        <img src={projeto6} alt="imagem de um projeto..."
-                            onMouseEnter={() => setMostrarBotoes(true)}>
-                        </img>
-                        {mostrarBotoes && (
-                            <div className="button-container" >
-                                <a href='https://to-do-list-mu-rouge.vercel.app/' target="_blank">
-                                    <button className='real-button-btn-1'>VER PROJETO</button>
-                                </a>
-                                <a href='https://github.com/iagopiresdev/To-Do-List' target="_blank">
-                                    <button className='real-button-btn-2'>VER CÓDIGO</button>
-                                </a>
-                            </div>
-                        )}
-                    </div>
-                    <h2>TODO LIST</h2>
-                    <p> <span>HTML</span> <span>CSS</span> <span>JQUERY</span></p>
-                </div>
-
+                {/* DOCERIA HARU'S CANDY*/}
                 <div className="project" onMouseLeave={() => setMostrarBotoes(false)}>
                     <div className='image-container'>
                         <img src={projeto7} alt="imagem de um projeto..."
